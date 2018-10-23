@@ -1,20 +1,13 @@
 {
-  "name": "ngx-modal",
+  "name": "ngx-modal-upgraded",
   "version": "0.0.29",
   "description": "Open modal window (dialog box) for your angular2 applications using bootstrap3.",
   "license": "MIT",
   "readmeFilename": "README.md",
   "private": true,
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pleerock/ngx-modal.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pleerock/ngx-modal/issues"
+    "name": "Hennadiy Lebedyev",
+    "email": "lebedyev.hennadiy@gmail.com"
   },
   "tags": [
     "modal",
@@ -22,7 +15,6 @@
     "typescript",
     "angular2-modal"
   ],
-  "peerDependencies": {},
   "devDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/compiler": "^7.0.0",
@@ -37,16 +29,6 @@
     "chai": "^3.4.1",
     "del": "^2.2.2",
     "es6-shim": "^0.35.2",
-    "gulp": "^3.9.0",
-    "gulp-file": "^0.3.0",
-    "gulp-mocha": "^3.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-shell": "^0.5.1",
-    "gulp-tslint": "^7.0.1",
-    "gulp-typescript": "^3.1.4",
-    "gulp-uglify": "^2.0.0",
-    "gulpclass": "^0.2.0",
     "mocha": "^3.2.0",
     "reflect-metadata": "0.1.9",
     "rxjs": "^6.3.3",
