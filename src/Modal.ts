@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter, ElementRef, ViewChild} from "@angular/core";
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 
 @Component({
     selector: "modal-header",
@@ -83,7 +83,7 @@ export class Modal {
     public submitButtonLabel: string;
 
     @Input()
-    public backdrop:boolen = true;
+    public backdrop:boolean = true;
 
     // -------------------------------------------------------------------------
     // Outputs

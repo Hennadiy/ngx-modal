@@ -1,6 +1,6 @@
-import {Component, Input, Output, EventEmitter, ElementRef, ViewChild, OnDestroy, OnInit} from "@angular/core";
-import {NavigationExtras} from "@angular/router/src/router";
-import {Router, ActivatedRoute} from "@angular/router";
+import { Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { NavigationExtras } from "@angular/router/src/router";
 
 @Component({
     selector: "route-modal",
@@ -67,7 +67,7 @@ export class RouteModal implements OnInit, OnDestroy {
     public submitButtonLabel: string;
 
     @Input()
-    public backdrop:boolen = true;
+    public backdrop: boolean = true;
 
     // -------------------------------------------------------------------------
     // Outputs
@@ -98,7 +98,7 @@ export class RouteModal implements OnInit, OnDestroy {
     // -------------------------------------------------------------------------
 
     constructor(private router: Router,
-                private activatedRoute: ActivatedRoute) {
+        private activatedRoute: ActivatedRoute) {
         this.createBackDrop();
     }
 
@@ -123,7 +123,7 @@ export class RouteModal implements OnInit, OnDestroy {
     open(...args: any[]) {
         if (this.isOpened)
             return;
-        
+
         this.isOpened = true;
         this.onOpen.emit(args);
         document.body.appendChild(this.backdropElement);
@@ -140,7 +140,7 @@ export class RouteModal implements OnInit, OnDestroy {
         document.body.className = document.body.className.replace(/modal-open\b/, "");
 
         if (this.cancelUrl) {
-            let navigationExtras: NavigationExtras = { };
+            let navigationExtras: NavigationExtras = {};
             if (this.cancelUrlExtras) {
                 if (this.cancelUrlExtras.relative) {
                     navigationExtras.relativeTo = this.activatedRoute;
@@ -166,7 +166,7 @@ export class RouteModal implements OnInit, OnDestroy {
         this.backdropElement = document.createElement("div");
         this.backdropElement.classList.add("fade");
         this.backdropElement.classList.add("in");
-        if(this.backdrop) {
+        if (this.backdrop) {
             this.backdropElement.classList.add("modal-backdrop");
         }
     }

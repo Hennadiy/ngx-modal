@@ -1,13 +1,11 @@
-import {Modal,ModalHeader,ModalContent,ModalFooter} from "./Modal";
-import {RouteModal} from "./RouteModal";
-import {NgModule} from "@angular/core";
-import {CommonModule} from '@angular/common';
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
 
-export { Modal, ModalContent, ModalFooter, ModalHeader } from "./Modal";
-export { RouteModal } from "./RouteModal";
+import { Modal, ModalContent, ModalFooter, ModalHeader } from "./Modal";
+import { RouteModal } from "./RouteModal";
 
 @NgModule({
-    imports: [ CommonModule ],
+    imports: [CommonModule],
     declarations: [
         Modal,
         RouteModal,
@@ -23,6 +21,4 @@ export { RouteModal } from "./RouteModal";
         ModalFooter,
     ],
 })
-export class ModalModule {
-
-}
+export class ModalModule { }
